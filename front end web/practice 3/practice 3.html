@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice 3 .css">
+</head>
+<body>
+<!-- =========================  for fixed navbar ====================== -->
+    <header id="head">
+        <div id="logochack">
+        <div id="logo">LOGO</div>
+        <!-- <input type="checkbox" id="chack">
+        <label id="label1" for="chack">SMTHIN</label> -->
+        </div>
+        <nav id="main-nav">
+            <ul>
+                <li  class="li-width" id="pc"><a href=""><img class="img-width" src="https://th.bing.com/th/id/R.b9b2f7d90c19d8914aeaddde71c33745?rik=hDM7F62srIwpYg&riu=http%3a%2f%2fadaptive-images.com%2fassets%2fimages%2fimac-27.png&ehk=41G1mJQEPgj0%2fiLBObV4PhGhp7SXsSHw23sSnWyMvIk%3d&risl=&pid=ImgRaw&r=0" alt=""></a></li>
+                <li class="li-width" id="tablet"><a href=""><img class="img-width" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Icons8_flat_tablet_android.svg/240px-Icons8_flat_tablet_android.svg.png" alt=""></a></li>
+                <li class="li-width" id="mobile"><a href=""><img class="img-width" src="https://cdn0.iconfinder.com/data/icons/ikooni-outline-free-basic/128/free-13-512.png" alt=""></a></li>
+                <li class="li-width" id="cart"><a href=""><img class="img-width" src="https://purepng.com/public/uploads/large/purepng.com-shopping-cartshoppingcarttrolleycarriagebuggysupermarkets-1421526532268rohcs.png" alt=""></a></li>
+                <li class="li-width2" id="close"><input type="checkbox"  id="close1">
+                <label  id="label2"for="close1"><img class="img-width" src="https://th.bing.com/th/id/R.1512b4487d292df518fc93906b7c5943?rik=CJnwEOUB%2bav1DA&riu=http%3a%2f%2fwww.freeiconspng.com%2fuploads%2fwhite-close-button-png-16.png&ehk=7VQNwyOvXni8WkzYPpxn9NE32St84Xg9bOgx42VBs6E%3d&risl=&pid=ImgRaw&r=0" alt=""></label>
+            </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="drop">
+        <input type="checkbox" id="chack">
+        <label id="label1" for="chack"><span> SMTHIN </span> </label>
+        <div id="label1-sbox">
+            <button id="btn1-for-label1-sbox"><img class="img-for-label1-sbox" src="https://i.stack.imgur.com/apAh6.png" alt=""></button>
+            <button id="btn2-for-label1-sbox"><img class="img-for-label1-sbox" src="https://cdn0.iconfinder.com/data/icons/arrows-82/100/Arrow_04-512.png" alt=""></button>
+             
+        </div>    
+    </div>
+<!-- <section id="pol2"> -->
+
+    <section id="pol">
+       <iframe src="practice3 MAIN.html" frameborder="0"></iframe>
+    </section>
+</section>
+     
+<!-- =========================  end for fixed navbar ====================== -->  
+
+ <!-- ----------------------------script for navbbar------------------------ -->
+   <script>
+      const pol = document.getElementById("pol")
+      const label1 = document.getElementById("label1")
+      label1.onclick = function () {
+        label1.classList.toggle("active")
+        pol.classList.toggle("active")
+      }
+      const pol1 = document.getElementById("pol")
+      const drop = document.getElementById("drop")
+      const header = document.querySelector("header")
+     const id_lable2 = document.getElementById("label2")
+     id_lable2.onclick= function () {
+        id_lable2.classList.toggle("active")
+        header.classList.toggle("active")
+        drop.classList.toggle("active")
+        pol1.classList.toggle("active2")
+     }
+     </script>
+<!-------------------------------script for navbbar----------------------------------------- -->
+
+</body>
+</html>

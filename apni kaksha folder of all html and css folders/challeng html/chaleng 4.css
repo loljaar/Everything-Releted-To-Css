@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bn{
+    font-size: 5vw;
+    padding: 3vw;
+    text-align: center;
+    color: #2ee400;
+    background-color:rgb(230, 230, 230);
+    
+}
+.navigation h1{
+    float: left;
+    font-size: 2vw;;
+}
+
+.navigation {
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    background-color:#2ee400;
+    margin: auto;
+}
+.navigation a{
+    display: inline-block;
+   text-decoration: none;;
+    color:rgb(255, 255, 255);  
+    padding: 1vw;
+    font-size: 2vw;
+    margin: 1vw;
+    margin-right: 0.3vw;
+}
+#serbox {
+    border-radius: 10px;
+    border: none;
+}

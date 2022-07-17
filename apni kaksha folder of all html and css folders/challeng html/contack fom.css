@@ -1,0 +1,80 @@
+.color{
+    box-shadow: 0 15px 10px 0 black, 0  15px 10px 0 blue;
+
+    
+
+    background-color:rgb(235, 11, 11);
+    margin-bottom: -1.7%;
+}
+div{
+    box-shadow: 0 15px 10px 0 black, 0  15px 10px 0 blue;
+    box-sizing: border-box;
+    
+    margin-left: 35%;
+    margin-right: 35%;
+    color: rgb(209, 173, 233);
+    border-radius: 5px ;
+    background-color: rgb(122, 145, 145);
+    cursor:grabbing;
+    
+ 
+  
+}
+body{
+    size: 50px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+}
+   
+
+
+h1,h4{
+    text-align: center;
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea{
+    text-transform: capitalize;
+    padding: 10px;}
+select,
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="number"]:active{
+    color: red;
+}
+
+
+
+
+
+    
+
+input[type="submit"]{
+    border-color: aquamarine;
+    border-radius: 5px;
+    width: 50%;
+    margin-left: 26%;
+    background-color: mediumslateblue;
+    height: 60px;
+
+
+
+}
+input[type="submit"]:hover{
+    background-color: rgb(233, 17, 17);
+    
+}
+
+
+    
+
+
+   
+
+

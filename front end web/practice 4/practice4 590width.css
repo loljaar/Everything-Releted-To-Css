@@ -1,0 +1,76 @@
+
+ /* ===================
+   ---------section ar3 ---------
+   ======================= */
+   @media only screen and (max-width: 590px){   
+   #ar3{
+    padding: 4.5rem;
+    padding-bottom: 1rem;
+    min-height: 120vh;
+    grid-template-areas: 
+    "one one"
+    "two three";
+   }
+   }
+
+
+
+/* ===================
+   ---------section ar4 ---------
+   ======================= */
+
+@media only screen and (max-width: 590px){
+    #ar4 section{
+      grid-template-areas: 
+  "one"
+  "two"
+  "thri";
+
+    }
+    #div4-id-3, #div4-id-2, #div4-id-1{
+     grid-template-columns: repeat(2, 1fr);
+
+    }
+    #div4-id-3 > div:nth-child(5), #div4-id-2 > div:last-child, #div4-id-1 > div:nth-child(5){
+      margin-left: 50%;
+    }
+    #ar4{
+      min-height: 800vh;
+    }
+   }
+
+
+
+    /* ===================
+   ---------section ar5 ---------
+   ======================= */
+   
+   @media only screen and (max-width: 590px){
+   #ar5{
+    min-height: 240vh;
+    grid-template-areas:
+        "one"
+        "two"
+        "three";
+   }
+
+   }
+
+
+
+   /* ===================
+   ---------section ar7 ---------
+   ======================= */
+
+   @media only screen and (max-width: 590px){
+    #ar7{
+        height: 100vh;
+        grid-template-areas:
+        "one two three"
+        "four four four";
+    }
+    #ar7 > section:nth-child(1), #ar7 > section:nth-child(2), #ar7 > section:nth-child(3){
+                 min-height: 100%;
+    }
+ 
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       * {
+           box-sizing: border-box;
+       }
+       h1{
+           text-align: center;
+           text-decoration: solid;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+       }
+       .movingbox{
+           text-align: center;
+           padding: 20px;
+           width: 20px;
+           border: 15px;
+           border-radius: 5px;
+           color: aqua;
+           background-color: blueviolet;
+           overflow: hidden;
+
+       }
+      @media all and (max-width:1145px) and (min-width:950px){
+          .movingbox {
+              width: 100px;
+               padding-right: 30px;
+              margin-right: 90px;
+              float: right ;
+          }
+      }
+      @media all and (max-width:950px) and (min-width:699px){
+          .movingbox {
+              width: 100px;
+              padding-right: 30px;
+              margin-right: 90px;
+              float: right;
+          }
+      }
+      @media all and (max-width:699px) and (min-width:0px){
+          .movingbox {
+              width: 100px;
+              margin-left: 40%;
+              padding-right: 30px;
+              margin-right: 90px;
+              float: center;
+          }
+      }
+      @media all and (max-width:5000px) {
+          .movingbox {
+            width: 100px;
+              padding-right: 30px;
+              margin-right: 130px;
+              float: right;
+          }
+      }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   
+       <h1> hellow</h1>
+   
+   <br>
+   <div id="realbox">
+      
+    <p class="movingbox">box1</p>
+    <p class="movingbox">box2</p>
+    <p class="movingbox">box3</p>
+    <p class="movingbox">box4</p>
+   
+   </div>
+
+</body>
+</html>

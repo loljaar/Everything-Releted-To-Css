@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      :root {
+        --gradient: linear-gradient(
+          45deg,
+          #845ec2,
+          #d65db1,
+          #ff6f91,
+          #ff9671,
+          #ffc75f,
+          #f9f871
+        );
+      }
+      body {
+        font-family: basic-sans, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        font-size: 1.125em;
+        line-height: 1.6;
+        color: #333;
+        background-color: rgb(207, 205, 205);
+        background-size: 300%;
+         
+        background-image: var(--gradient);
+        background-size:300%;
+         
+        animation: bg-animation 5s infinite alternate;
+      }
+      @keyframes bg-animation {
+        0% {background-position: left}
+        100%{background-position:right}
+      }
+
+      .content {
+        margin: auto;
+        background-color: white;
+        width: 70vw;
+        padding: 3em;
+        box-sizing: 0 0 3em rgba(0, 0, 0, 0.15);
+        
+      }
+
+      .title {
+        margin: 0 0 0.5em;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-style: italic;
+        font-size: 3rem;
+        color: #ee6352;
+        line-height: 0.8;
+        margin: 0;
+       
+      }
+
+      .fun {
+        display: none;
+        border: 0;
+        padding: 0.5em  1.5em;
+        font-size: 2rem;
+        background-image: var(--gradient);
+        background-size: 300%;
+        background-position: left;
+        transition: background-position 1s;
+      }
+      
+      .fun:hover,
+      .fun:focus{
+        background-position: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="title">Animating Gradients</h1>
+      <button class="fun">Hover Me</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+@media only screen and (max-width: 380px) {
+    #Main-Section{
+        width: 65%;
+    }
+}

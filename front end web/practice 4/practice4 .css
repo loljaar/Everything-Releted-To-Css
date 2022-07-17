@@ -1,0 +1,315 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+}
+       article{
+        display: grid;
+        place-items: center;
+        border: 2px solid red;
+        margin-block: auto;
+       }
+   main{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-areas: 
+    "ar1 ar1 ar1"
+    "ar2 ar2 ar2"
+    "ar3 ar3 ar3"
+    "ar3 ar3 ar3"
+    "ar3 ar3 ar3"
+    "ar4 ar4 ar4"
+    "ar4 ar4 ar4"
+    "ar4 ar4 ar4"
+    "ar4 ar4 ar4"
+    "ar4 ar4 ar4"
+    "ar5 ar5 ar5"
+    "ar5 ar5 ar5"
+    "ar5 ar5 ar5"
+    "ar6 ar6 ar6"
+    "ar6 ar6 ar6"
+    "ar6 ar6 ar6"
+    "ar7 ar7 ar7"
+    "ar7 ar7 ar7"
+    "ar7 ar7 ar7";
+   }
+   #ar1 {
+    width: 100%;
+    min-height: 10vh;
+    grid-area:ar1;
+    background-color: gray;
+
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    place-items: center;
+   }
+   #ar2 {
+    min-width: 100%;
+    min-height: 10vh;
+    grid-area:ar2;
+    background-color: rgb(112, 112, 112);
+   }
+   #ar3 {
+    min-width: 100%;
+    min-height: 100vh;
+    grid-area:ar3;
+    background-color: rgb(105, 104, 104);
+   }
+   #ar4 {
+    min-width: 100%;
+    min-height: 535vh;
+    grid-area:ar4;
+    background-color: rgb(107, 107, 107);
+   }
+   #ar5 {
+    min-width: 100%;
+    min-height: 80vh;
+    grid-area:ar5;
+    background-color: rgb(104, 103, 103);
+   }
+   #ar6 {
+    min-width: 100%;
+    min-height: 60vh;
+    grid-area:ar6;
+    background-color: rgb(94, 93, 93);
+   }
+   #ar7{
+    min-width: 100%;
+    min-height: 80vh;
+    grid-area:ar7;
+    background-color: rgb(80, 79, 79);
+   }
+
+   /* ===================
+   ---------section ar1  ---------
+   ======================= */
+   .div1{
+    display: flex;
+    border: 1px solid rgb(0, 0, 196);
+    padding: 0 2em;
+    background-color: azure;
+    min-height: 10vh;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+   }
+   #div-id-1{
+    display: flex;
+    
+    width:max-content;
+   }
+   #div-id-1 img{
+       
+       max-width: clamp(.5rem, 1rem + 2rem, 3rem);
+       min-height: clamp(.5rem, 1rem + 2rem, 3rem);
+   }
+   #div-id-1 ul li{
+    
+    float: left;
+    margin: .5rem;
+   }
+   #div-id-2{
+   width:max-content;
+    text-align: center;
+    text-decoration: line-through;
+    font-size: clamp(.5rem, 1rem + 10vw ,5rem);
+   }
+ 
+
+/* ===================
+   ---------section ar3 ---------
+   ======================= */
+    
+   #ar3{
+    padding: 4.5rem;
+    padding-bottom: 1rem;
+    grid-template-areas: 
+    "one one two"
+    "one one three";
+   }
+
+   #ar3 > section:nth-child(1){
+    grid-area: one;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: aqua;
+    border: 2px dashed green;
+   }
+   #ar3 > section:nth-child(2){
+    grid-area: two;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: brown;
+    border: 2px dashed rgb(0, 217, 255);
+   }
+   #ar3 > section:nth-child(3){
+    grid-area: three;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: blueviolet;
+    border: 2px dashed rgb(140, 0, 255);
+   }  
+
+
+
+
+
+   /* ===================
+   ---------section ar4 ---------
+   ======================= */
+
+   #ar4 section{
+    border: 2px solid rgb(0, 255, 64);
+    min-width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-gap: 1rem;
+    /* grid-template-columns:  minmax(( 200px, 500px), ( 200px, 500px), (  200px, 500px)); */
+    /* grid-template-columns: minmax(200px, 1fr) minmax(200px, 1fr) minmax(200px, 1fr); */
+    grid-template-areas: 
+    "one two thri";
+         /* or */
+       /* grid-template-columns: repeat(3, autofit, minmax( 33.33%, 1fr));  */
+       /* grid-template-rows: none; */
+   }
+     .div4{
+      /* min-width: 33.33%; */
+       display: grid;
+       padding: auto;
+       border: 2px solid yellow;
+       min-height: 100%;
+       /* margin-top: 20px; */
+     }
+     #div4-id-1{
+      grid-area: one;
+     }
+     #div4-id-2{
+      grid-area: two;
+     }
+     #div4-id-3{
+      grid-area: thri;
+     }
+     .box1, .box2, .box3{
+      min-height: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 90%;
+      max-width: 90%;
+      border: 2px dashed rgb(0, 16, 156);
+     }
+     .box1_1, .box1_2, .box1_3, .box1_1_2, .box1_2_2, .box1_3_2{
+         max-width: 100%;
+         min-height: 50%;
+     }
+     .box1_1, .box1_2, .box1_3{
+      border: 2px solid red;
+      background-color: blueviolet;
+     }
+     .box1_1_2, .box1_2_2, .box1_3_2{
+      border: 2px solid blue;
+      background-color: burlywood;
+     }
+
+
+
+
+     /* ===================
+   ---------section ar5 ---------
+   ======================= */
+   #ar5{
+    padding: 4.5rem;
+    padding-bottom: 1rem;
+    grid-template-areas: 
+    "one two three";
+   }
+
+   #ar5 > section:nth-child(1){
+    grid-area: one;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: aqua;
+    border: 2px dashed green;
+   }
+   #ar5 > section:nth-child(2){
+    grid-area: two;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: brown;
+    border: 2px dashed rgb(0, 217, 255);
+   }
+   #ar5 > section:nth-child(3){
+    grid-area: three;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: blueviolet;
+    border: 2px dashed rgb(140, 0, 255);
+   }
+
+
+    /* ===================
+   ---------section ar6 ---------
+   ======================= */
+   #ar6{
+    padding: 4.5rem;
+    padding-bottom: 1rem;
+    
+   }
+
+   #ar6 > section{
+    padding: 4.5rem;
+    padding-bottom: 1rem;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: aqua;
+    border: 2px dashed green;
+   }
+
+
+   /* ===================
+   ---------section ar7 ---------
+   ======================= */
+
+   #ar7{
+    place-items: start;
+    padding: 4.5rem;
+    padding-bottom: 1rem;
+    grid-template-areas: 
+    "one two three four four four";
+   
+   }
+   
+   #ar7 > section:nth-child(1){
+    grid-area: one;
+    min-width: 100%;
+    min-height: 70%;
+    background-color: aqua;
+    border: 2px dashed green;
+   }
+   #ar7 > section:nth-child(2){
+    grid-area: two;
+    min-width: 100%;
+    min-height: 70%;
+    background-color: brown;
+    border: 2px dashed rgb(0, 217, 255);
+   }
+   #ar7 > section:nth-child(3){
+    grid-area: three;
+    min-width: 100%;
+    min-height: 70%;
+    background-color: blueviolet;
+    border: 2px dashed rgb(0, 38, 255);
+   }
+   #ar7 > section:nth-child(4){
+    grid-area: four;
+    min-width: 100%;
+    min-height: 70%;
+    background-color: rgb(7, 219, 0);
+    border: 2px dashed rgb(255, 0, 128);
+   }
+ 

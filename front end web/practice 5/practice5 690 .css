@@ -1,0 +1,158 @@
+@media only screen and (max-width:690px){
+
+    section{
+        grid-gap:1em ;
+        grid-template-areas: 
+        "one one one two"
+        "three three three four"
+        "three three three four"
+        "three three three four"
+        "three three three four"
+        "five five five five";
+    }
+    #ar1{
+        position: absolute;
+       
+        width: 91%;
+        top: 2%;
+    }
+    #ar2{
+        position: absolute;
+        right: 1%;
+        width: 3%;
+    }
+    #ar2:hover{
+        width: 65%;
+    }
+    #ar3{
+        position: absolute;
+       
+        width: 91%;
+        top: 5.3em;
+    }
+    #ar4{
+        position: absolute;
+        right: 1%;
+        width: 3%;
+        top: 5.3em;
+    }
+    #ar4:hover{
+        width: 65%;
+    }
+    #ar5{
+        position: relative;
+       bottom: -45%;
+        width: 99%;
+        
+    }
+
+    #ar2 section{
+       transform: scale(0);
+    }
+    #ar2:hover section{
+        transform: scale(1);
+    }
+    #ar4 section{
+       transform: scale(0);
+    }
+    #ar4:hover section{
+        transform: scale(1);
+    }
+
+    #ar1 a:nth-child(2){
+        font-size: clamp(.5rem, 1rem + 10vw , 1.4rem);
+      }
+      #ar1 a{
+        margin-top: 4%;
+      }
+       
+
+
+      #ar3ss1 #divar3-2{
+        overflow-y: scroll;
+      }
+       #ar3ss3 #divar3-2-ss3{
+        overflow-y: scroll;
+       }
+       #ar3ss2 #divar3-2-ss2{
+        overflow-y: scroll;
+       }
+      .mydiv-c{
+        overflow-y: scroll;
+        height: 190%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .sec1-c{
+        max-height: 37vh;
+        position: relative
+      }
+
+      .sec1-div1-c{
+     
+        grid-area: one;
+        border: 2px dashed yellow;
+        background-color: rgba(59, 207, 0, 0.5);
+        height:100%;
+        padding: 0%;
+        
+        display: grid;
+        /* justify-content: center;
+        align-items: center; */
+        position: relative;
+       
+        align-items: baseline;
+        justify-content: flex-start;
+        border-radius:10px;
+    }
+    .sec1-div2-c{
+        
+        grid-area: two;
+        border: 2px dashed green;
+        background-color: rgba(0, 255, 21, 0.5);
+        /* height:10%; */
+        display: none;
+        padding: 0%;
+        max-width: 100%;
+        position: absolute;
+        display: initial;
+        width: 100%;
+        height: 15%;
+        bottom: 0%;
+        border-radius:10px;
+        display: grid;
+        grid-template-areas: 
+    
+    "three three three";
+    }
+    
+    .sec1-div1-c img{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border-radius:10px;
+    }
+    
+    .sec1-div2-c:hover,
+    .sec1-div2-c:focus-visible{
+      /* display: initial; */
+      height:13vh;
+      box-shadow: inset 9px 0 98px -9px #000000ad, inset 0 0px 8px 0px #000000, -5px 0 0px -5px #000000;
+      background-color: rgba(0, 255, 21, 0.021);
+      grid-template-areas: 
+      "one one one"
+     
+      "three three three";
+    }
+    
+    .sec1-div2-c .fuck{
+      background-color: #0eac00;
+    }
+
+    /* ===javs==== */
+    .active{background-color: rgba(0, 255, 21, 0.5);}
+    .active1{
+      background-color: rgba(0, 255, 21, 0.5);
+    }
+}

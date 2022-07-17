@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      :root {
+        --navbar-height: 59px;
+      }
+      #navbar {
+        display: flex;
+        top: 0%;
+        position: sticky;
+        align-items: center;
+      }
+      #navbar::before {
+        content: "";
+        top: 0%;
+        left: 0%;
+        height: 103%;
+        width: 100%;
+        position: absolute;
+        background-color: black;
+        z-index: -1;
+        opacity: 0.4;
+      }
+      #navbar #ul1 li a:hover {
+        background-color: white;
+        color: black;
+      }
+      #navbar #ul1 {
+        display: flex;
+        margin: 12px 23px;
+      }
+      #navbar #ul1 li {
+        list-style: none;
+        font-size: 1rem;
+      }
+      #navbar #ul1 li a {
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        color: white;
+        text-decoration: none;
+      }
+      #navbar #ul2 {
+        display: flex;
+        margin: 12px 23px;
+        margin-left: 50%;
+      }
+      #navbar #ul2 li {
+        list-style: none;
+        font-size: 1rem;
+      }
+      #navbar #ul2 li a {
+        display: block;
+        padding: 3px 22px;
+        border-radius: 20px;
+        /* border: 2px solid red;
+            border-top: 0px;
+            border-bottom: 0px; */
+        color: white;
+        text-decoration: none;
+      }
+      #navbar #ul2 li a:hover {
+        border: 2px solid red;
+        border-top: 0px;
+        border-bottom: 0px;
+      }
+      #home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 580px;
+        padding: 12px 32px;
+      }
+      #home::before {
+        content: "";
+        top: 0%;
+        left: 0%;
+        height: 103%;
+        width: 100%;
+        position: absolute;
+        background: black;
+        z-index: -1;
+        opacity: 0.4;
+      }
+      #home #h-primary {
+        margin-top: -10%;
+      }
+      #grid {
+        display: grid;
+
+        grid-template-areas: "aside main main main";
+      }
+      #grid #aside {
+        grid-area: aside;
+        border: 2px solid black;
+        background-color: blue;
+        display: grid;
+        height: 30vh;
+      }
+      #grid #main {
+        grid-area: main;
+        border: 2px solid black;
+        background-color: aqua;
+        display: grid;
+        height: 30vh;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul id="ul1">
+        <li class="item"><a href="#">home</a></li>
+        <li class="item"><a href="#">about us</a></li>
+        <li class="item"><a href="#">contact us</a></li>
+        <li class="item"><a href="#">investers</a></li>
+      </ul>
+      <ul id="ul2">
+        <li class="item-2">
+          <a>
+            <img
+              src="https://th.bing.com/th/id/R.4af42c87858bf65a60f6632aaf366a2f?rik=NGuIpcspN7X91g&riu=http%3a%2f%2fpluspng.com%2fimg-png%2finstagram-logo-eps-png-instagram-logo1-instagram-logo-1915.png&ehk=fvtoXiEoQhjKg0l38At0nkWKwoCxRe14IAkiIwAsQRg%3d&risl=&pid=ImgRaw&r=0"
+              width="20px"
+              height="20px"
+              alt=""
+          /></a>
+        </li>
+        <li class="item-2">
+          <a>
+            <img
+              src="https://th.bing.com/th/id/R.4af42c87858bf65a60f6632aaf366a2f?rik=NGuIpcspN7X91g&riu=http%3a%2f%2fpluspng.com%2fimg-png%2finstagram-logo-eps-png-instagram-logo1-instagram-logo-1915.png&ehk=fvtoXiEoQhjKg0l38At0nkWKwoCxRe14IAkiIwAsQRg%3d&risl=&pid=ImgRaw&r=0"
+              width="20px"
+              height="20px"
+              alt=""
+          /></a>
+        </li>
+        <li class="item-2">
+          <a>
+            <img
+              src="https://th.bing.com/th/id/R.4af42c87858bf65a60f6632aaf366a2f?rik=NGuIpcspN7X91g&riu=http%3a%2f%2fpluspng.com%2fimg-png%2finstagram-logo-eps-png-instagram-logo1-instagram-logo-1915.png&ehk=fvtoXiEoQhjKg0l38At0nkWKwoCxRe14IAkiIwAsQRg%3d&risl=&pid=ImgRaw&r=0"
+              width="20px"
+              height="20px"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="home">
+      <h1 id="h-primary">wellcome to wolrd</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+        adipisci natus veniam cum reprehenderit, architecto minima quia eius sit
+        est!
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque eos
+        debitis quas fugit autem natus.
+      </p>
+    </section>
+    <section id="grid">
+      <p id="aside">ASIDE</p>
+      <p id="main">MAIN</p>
+    </section>
+  </body>
+</html>

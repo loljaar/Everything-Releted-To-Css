@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        width: 100vw;
+        margin: 0%;
+        padding: 0%;
+        background: url(https://th.bing.com/th/id/R.391b37ce7d5ef578db27228596788f9f?rik=jy3A1ayllFc8wg&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2014%2f12%2fMost-beautiful-field-of-lavender-flowers-widescreen.jpg&ehk=T%2bft53MGZBmsW0BGv0PAnGDFavkqCsJypD%2bx1965Dmc%3d&risl=&pid=ImgRaw&r=0)
+          no-repeat;
+      }
+      .navbar {
+        display: flex;
+         position: sticky;
+        align-items: center;
+        top: 0%;
+        width: 100vw;
+        height: 15vh;
+        background: transparent;
+        /* background-color: grey; */
+        /* border: 2px solid black; */
+      }
+      .navbar::before{
+        content: "";
+        top: 0%;
+        left:0%;
+        position: absolute;
+        color: white;
+        background-color: black;
+        z-index: -1;
+        opacity: .4;
+        height: 103%;
+          width: 100%;
+      }
+      .head {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 20vw;
+        height: 10vh;
+        /* background-color: aqua;
+            border: 2px solid red; */
+        background: transparent;
+      }
+      .A {
+        font-size: 30px;
+        font-weight: bold;
+      }
+      .mid {
+        margin-left: 15%;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30vw;
+        height: 7vh;
+        /* background-color: blue;
+          border: 2px solid red; */
+        background: transparent;
+      }
+      .end {
+        margin-left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20vw;
+        padding: 10px;
+        height: 7vh;
+        /* background-color: blue;
+          border: 2px solid red; */
+        background: transparent;
+      }
+      .A,
+      .B {
+        padding: 15px;
+        color: aliceblue;
+        list-style: none;
+        text-decoration: none;
+        /* background-color: brown;
+          border: 2px solid red; */
+        background: transparent;
+      }
+      .C {
+        padding: 5px;
+        width: 40px;
+        height: 40px;
+        filter: invert(100%);
+        color: aliceblue;
+        list-style: none;
+        text-decoration: none;
+        /* background-color: brown;
+          border: 2px solid red; */
+        background: transparent;
+      }
+
+      .H1 {
+        display: flex;
+        margin-top: 6%;
+        width: 100vw;
+        height: 50vh;
+        /* background-color: aqua;
+         border: 2px solid red; */
+        justify-content: center;
+        align-items: center;
+      }
+      #H1 {
+        filter: brightness(30%);
+        text-align: center;
+        width: 25vw;
+        height: 20vh;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(255, 145, 0);
+        /* background-color: blue;
+             border: 2px solid green; */
+      }
+      button {
+        display: flex;
+        position: absolute;
+        margin-top: 15%;
+        justify-content: center;
+        align-items: center;
+        width: 10%;
+        margin-left: 50%;
+        margin-right: 50%;
+        height: 70px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+        background-color: gray;
+        font-size: 20px;
+      }
+      button:hover {
+        background-color: rgb(185, 184, 184);
+      }
+      .box {
+        margin: 0%;
+        padding: 0%;
+        margin-top: 12%;
+        background-color: gray;
+        width: 100vw;
+        height: 150vh;
+        display: flex;
+        position: absolute;
+      }
+      #H2 {
+        display: flex;
+        width: 100vw;
+        margin-top: 5%;
+        justify-content: center;
+        font-size: 45px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* background-color: aqua;
+              border: 2px solid red; */
+      }
+      .threeimg {
+        margin-top: 10%;
+        position: absolute;
+        /* background-color: brown;
+             border: 2px solid blue; */
+        display: flex;
+        width: 100vw;
+        height: 75vh;
+        justify-content: center;
+        justify-content: space-evenly;
+      }
+      .first,
+      .second,
+      .third {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 90px;
+        width: 22vw;
+        height: 60vh;
+        /* background-color: blue; */
+        /* border: 2px solid red; */
+      }
+      .first img,
+      .second img,
+      .third img {
+        /* margin-top: 20%; */
+        border: 0ch;
+      }
+      fieldset {
+        margin-top: 20%;
+        height: 80vh;
+        text-decoration: none;
+        border: 0ch;
+      }
+      figcaption {
+        /* background-color: brown;
+             border: 2px solid red; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7%;
+        color: black;
+        text-decoration: underline;
+        list-style: none;
+        font-size: 25px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+      }
+      figcaption:hover {
+        background-color: gainsboro;
+      }
+      .BUY {
+        margin-top: 10%;
+      }
+
+      .box2 {
+        display: flex;
+        /* background-color: aqua;
+                 border: 2px solid red; */
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 80vh;
+        position: absolute;
+        margin-top: 70%;
+      }
+      .box2 {
+        filter: sepia(1);
+      }
+
+      .box3 {
+        display: flex;
+        position: absolute;
+        margin: 0%;
+        padding: 0%;
+        margin-top: 109%;
+        background-color: gray;
+        /* border: 2px solid red; */
+        width: 100vw;
+        height: 250vh;
+      }
+      .H3 {
+        margin-top: 10%;
+        display: flex;
+        /* background-color: aqua;
+                 border: 2px solid blue; */
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 12vh;
+      }
+      #H3 {
+        text-align: center;
+        width: 25vw;
+        height: 10vh;
+        font-size: 45px;
+        font-weight: bolder;
+        color: rgb(255, 255, 255);
+        /* background-color: blue;
+             border: 2px solid green; */
+      }
+      .H4 {
+        display: flex;
+        position: absolute;
+        width: 100vw;
+        height: 75vh;
+        /* background-color: brown; */
+        /* border: 2px solid ; */
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 18%;
+      }
+      #video {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0%;
+        width: 100vw;
+        height: 70vh;
+        /* background-color: blueviolet;
+                 border: 2px solid blue; */
+      }
+      .video {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0%;
+        width: 40vw;
+        height: 60vh;
+        /* background-color: red;
+                 border: 2px solid blue; */
+      }
+      .H5 {
+        position: absolute;
+        display: flex;
+        width: 100vw;
+        height: 30vh;
+        /* background-color: chartreuse;
+                 border: 2px solid blue; */
+        margin-top: 53%;
+        justify-content: center;
+      }
+      .Text {
+        display: flex;
+        width: 90vw;
+        height: 10vh;
+        /* background-color: red;
+                border: 2px solid black; */
+        justify-content: center;
+        color: white;
+        justify-content: space-around;
+      }
+      .Text2 {
+        position: absolute;
+        margin-top: 5%;
+        width: 100vw;
+        height: 15vh;
+        display: flex;
+        /* background-color: blue;
+            border: 2px solid yellow; */
+        color: white;
+        justify-content: center;
+
+        text-align: justify;
+        justify-content: space-around;
+      }
+
+      .p1 {
+        position: sticky;
+      }
+
+      #P1 {
+        text-align: center;
+        font-size: 20px;
+        display: flex;
+        width: 50vw;
+        height: 14vh;
+        /* border: 2px solid black;
+            background-color: chocolate; */
+      }
+      #P2 {
+        text-align: center;
+        font-size: 20px;
+        display: flex;
+        width: 50vw;
+        height: 14vh;
+        /* border: 2px solid black;
+            background-color: chocolate; */
+      }
+      #BUY2 {
+        margin-top: 5%;
+        right: 70%;
+      }
+      .BUY2 {
+        margin-top: 5%;
+        left: 67%;
+      }
+      .Email-img {
+        margin-top: 78%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 70vh;
+        /* background-color: aqua;
+            border: 2px solid green; */
+      }
+      #Email-img {
+        display: flex;
+        justify-content: center;
+        filter: contrast(5);
+        opacity: 0.5;
+        width: 100vw;
+        height: 80vh;
+      }
+
+      .h2 {
+        top: 100px;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        font-weight: bold;
+        width: 80vw;
+        height: 8vh;
+        color: rgb(255, 255, 255);
+        /* background-color: brown;
+            border: 2px solid yellow ; */
+      }
+
+      #h2 {
+        top: 20px;
+        margin-top: 10%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+        width: 80vw;
+        height: 8vh;
+        color: rgb(255, 255, 255);
+        /* background-color: rgb(75, 42, 165);
+            border: 2px solid rgb(0, 255, 42) ; */
+      }
+
+      #email {
+        margin-top: 5%;
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+        width: 80vw;
+        height: 14vh;
+        color: rgb(255, 255, 255);
+        /* background-color: rgb(75, 42, 165);
+            border: 2px solid rgb(0, 255, 42) ; */
+      }
+      .email {
+        text-align: justify;
+        margin-right: 15px;
+        text-transform: uppercase;
+        height: 10vh;
+        width: 20vw;
+      }
+      #signup {
+        border: 0ch;
+        margin-right: 20px;
+        margin-top: 5px;
+        margin-left: 40%;
+        height: 8vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="head">
+        <a class="A" href="#"> Flover </a>
+      </div>
+      <div class="mid">
+        <a class="B" href="#"> shop </a>
+        <a class="B" href="#"> ourStory </a>
+        <a class="B" href="#"> journal </a>
+        <a class="B" href="#"> contact </a>
+      </div>
+      <div class="end">
+        <a class="C" href="#">
+          <img
+            src="https://th.bing.com/th/id/R.4af42c87858bf65a60f6632aaf366a2f?rik=NGuIpcspN7X91g&riu=http%3a%2f%2fpluspng.com%2fimg-png%2finstagram-logo-eps-png-instagram-logo1-instagram-logo-1915.png&ehk=fvtoXiEoQhjKg0l38At0nkWKwoCxRe14IAkiIwAsQRg%3d&risl=&pid=ImgRaw&r=0"
+            width="20px"
+            height="20px"
+            alt=""
+          />
+        </a>
+        <a class="C" href="#">
+          <img
+            src="https://sguru.org/wp-content/uploads/2018/02/facebook_black_outline_logo_transparent_background_png_font_icon_vector_button_maker_and.png"
+            width="20px"
+            height="20px"
+            alt=""
+          />
+        </a>
+        <a class="C" href="#">
+          <img
+            src="https://pluspng.com/img-png/twitter-png-twitter-icon-1600.png"
+            width="20px"
+            height="20px"
+            alt=""
+          />
+        </a>
+        <a class="C" href="#">
+          <img
+            src="shopping-cart-svg-png-icon-download-28.png"
+            width="20px"
+            height="20"
+            alt=""
+          />
+        </a>
+      </div>
+    </div>
+    <div class="H1">
+      <h1 id="H1">Plants And Pots For Your Home</h1>
+      <button>shop now</button>
+    </div>
+
+    <div class="box">
+      <div class="H2">
+        <h1 id="H2">Fan Favorites</h1>
+      </div>
+      <div class="threeimg">
+        <a href="#" class="first"
+          ><fieldset>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0248/6983/products/EutaxiaObovata_single.jpg"
+              width="300px"
+              height="400px"
+              alt=""
+            />
+            <figcaption>first box <button class="BUY">BUY</button></figcaption>
+          </fieldset></a
+        >
+
+        <a href="#" class="second"
+          ><fieldset>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0248/6983/products/EutaxiaObovata_single.jpg"
+              width="300px"
+              height="400px"
+              alt=""
+            />
+            <figcaption>first box <button class="BUY">BUY</button></figcaption>
+          </fieldset></a
+        >
+
+        <a href="#" class="third"
+          ><fieldset>
+            <img
+              src="https://cdn.shopify.com/s/files/1/0248/6983/products/EutaxiaObovata_single.jpg"
+              width="300px"
+              height="400px"
+              alt=""
+            />
+            <figcaption>first box <button class="BUY">BUY</button></figcaption>
+          </fieldset></a
+        >
+
+        <!-- <div class="first"> first box  </div>
+                 <div class="second"> secong box  </div>
+                 <div class="third"> therd box  </div> -->
+      </div>
+    </div>
+    <div class="box2">
+      <img
+        src="https://th.bing.com/th/id/R.8c4850572764a7e93e3364833ee69ed7?rik=g42UORIr1zr1vQ&riu=http%3a%2f%2fwallup.net%2fwp-content%2fuploads%2f2016%2f02%2f215748-flowers-pink_flowers-bokeh-macro.jpg&ehk=quFzNSliSVpLL5m4wM0Kg%2fH6mnWHI6z84gHcMXN%2bzag%3d&risl=&pid=ImgRaw&r=0"
+        width="100%"
+        height="100%"
+        alt=""
+      />
+    </div>
+    <div class="box3">
+      <div class="H3">
+        <h1 id="H3">The Journal</h1>
+      </div>
+      <div class="H4">
+        <div id="video">
+          <video
+            class="video"
+            src="Flower Pot Animation.mp4"
+            autoplay
+            loop
+            muted
+          ></video>
+          <video
+            class="video"
+            src="Flower Pot Animation.mp4"
+            autoplay
+            loop
+            muted
+          ></video>
+        </div>
+      </div>
+      <div class="H5">
+        <div class="Text">
+          <h1 id="h5">Is It Flowers Youre After?</h1>
+          <h1 id="H5">Searching for Succulents?</h1>
+        </div>
+        <div class="Text2">
+          <div id="P1">
+            <p class="P1">
+              Flowering plants are stunning, but require a bit more work than
+              their non-flowering brethren. Learn how to keep them happy
+              <button id="BUY2">Read More</button>
+            </p>
+          </div>
+          <div id="P2">
+            <p class="P1">
+              If you have a sunny windowsill, you can be a succulent owner.
+              These hardy and beautiful plants are as easy as they come.
+              <button class="BUY2">Read More</button>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="Email-img">
+        <img
+          src="https://th.bing.com/th/id/R.6b7a80056e23ceb2a4b85413375c37ce?rik=RkfHD7OglnByqw&riu=http%3a%2f%2fimages2.fanpop.com%2fimages%2fphotos%2f3300000%2fEagle-animal-planet-3303078-2000-1333.jpg&ehk=AKuT%2f%2b%2bd9movCljF%2bVz0Yh8ekpU4piaUjsXmAJLkTLE%3d&risl=&pid=ImgRaw&r=0"
+          alt=""
+          id="Email-img"
+        />
+        <div class="h2">They grow up so fast.</div>
+        <div id="h2">
+          Dont miss a thing. Sign up to receive news and updates.
+        </div>
+        <div id="email">
+          <input
+            class="email"
+            type="email"
+            name="email"
+            placeholder="your email"
+          />
+          <button id="signup">sign-up</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

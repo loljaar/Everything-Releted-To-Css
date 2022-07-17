@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="hellow how do ypou do " />
+    <meta name="keywords" content="hellow, how, do, you, do" />
+    <meta name="robots" content="index, follow" />
+    <title>forms</title>
+  </head>
+  <body>
+    <h2>this is my form of luck</h2>
+    <!-- what you put in action like "backend.php" this inputs that peaple have given in the form will get submited to "backend.php"  -->
+    <form action="backend.php">
+      <!-- label me "for" me app id likhoge jiske text pe ager app click karoge to os ka option select ho jay ga like niche jese "for" me name likha hey and input text me name hey   -->
+      <label for="name">name:</label>
+      <div>
+        <input type="text" placeholder="name" name="name" id="name" required />
+      </div>
+      <!--  use br as low as possible we will fix the gap with css ok -->
+      <br />
+      <label for="role">role:</label>
+      <div>
+        <input
+          type="text"
+          placeholder="your role"
+          name="your role"
+          id="role"
+          required
+        />
+      </div>
+      <br />
+      <label for="email">email:</label>
+      <div>
+        <input
+          type="email"
+          placeholder="your email"
+          name="email"
+          id="email"
+          required
+        />
+      </div>
+      <br />
+      <label for="date1">date:</label>
+      <div>
+        <input type="date" name="date" id="date1" />
+      </div>
+      <br />
+      <div>
+        <label for="are you alright">are you alright:</label>
+
+        <input type="checkbox" name="chackbox" id="are you alright" required />
+      </div>
+      <br />
+      <label for="male">gender:</label>
+      <div>
+        male<input type="radio" name="gender" id="male" required /> female<input
+          type="radio"
+          name="gender"
+          id="female"
+        />
+        other<input type="radio" name="gender" id="other" />
+      </div>
+      <br />
+      <div>
+        <label for="car">mycar</label>
+        <select name="car" id="car">
+          <option value="select car">select car</option>
+          <option value="red car" selected>red car</option>
+          <option value="green car">green car</option>
+          <option value="bluecar">blue car</option>
+        </select>
+      </div>
+      <br />
+      <div>
+        your story:<br /><textarea
+          name="your stoy"
+          cols="30"
+          rows="10"
+          required
+          placeholder="tell us about your story in breef "
+        ></textarea>
+      </div>
+      <br />
+      <div>
+        <input type="submit" value="submit" name="submit" required />
+
+        <input type="reset" value="reset" name="reset" />
+      </div>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,151 @@
+@media only screen and (max-width: 380px){
+    #ar1{
+        position: absolute;
+       
+        width: 90%;
+       
+    }
+    #ar2:hover{
+      width: 75%;
+  }
+  #ar2 section #for-great-deals{
+    font-size: 10px;
+  }
+    #ar3{
+        position: absolute;
+       
+        width: 90%;
+        
+    }
+    #ar4:hover{
+      width: 75%;
+  }
+    #ar1 a:nth-child(2){
+        line-height: 1rem;
+        font-size: clamp(.5rem, 1rem + 10vw , 1rem);
+      }
+      #ar1 a{
+        margin-top: 3%;
+      }
+      #ar3ss1 #div3-2 h4{
+        margin: 0%;
+        padding: 0%;
+        font-size:  clamp(.2rem, .1rem + 10vw , .5rem);;
+      }
+      #ar3ss1 #div3-1 img {
+        background-color: blue;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    #ar3ss1 #div3-3{
+        max-width: 100%;
+        position: relative;
+        left: -15%;
+    }
+    /* ========= */
+      #ar3ss2 #div3-2-ss2 h4,
+      #ar3ss3 #div3-2-ss3 h4{
+        margin: 0%;
+        padding: 0%;
+        font-size:  clamp(.2rem, .1rem + 10vw , .5rem);;
+      }
+      #ar3ss2 #div3-1-ss2 img,
+      #ar3ss3 #div3-1-ss3 img {
+        background-color: blue;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    #ar3ss2 #div3-3-ss2,
+    #ar3ss3 #div3-3-ss3{
+        max-width: 100%;
+        position: relative;
+        left: -15%;
+    }
+    /* ========= */
+    #ar3ss1 #divar3-2{
+             overflow-y: scroll;
+    }
+    #ar3ss3 #divar3-2-ss3{
+      overflow-y: scroll;
+     }
+     #ar3ss2 #divar3-2-ss2{
+      overflow-y: scroll;
+     }
+    .mydiv-c{
+      overflow-y: scroll;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    height: 389%;
+    }
+    .sec1-c{
+      position: relative;
+      max-height: 31vh;
+    }
+
+    .sec1-div1-c{
+     
+      grid-area: one;
+      border: 2px dashed yellow;
+      background-color: rgba(59, 207, 0, 0.5);
+      height:100%;
+      padding: 0%;
+      
+      display: grid;
+      /* justify-content: center;
+      align-items: center; */
+      position: relative;
+     
+      align-items: baseline;
+      justify-content: flex-start;
+      border-radius:10px;
+  }
+  .sec1-div2-c{
+      
+      grid-area: two;
+      border: 2px dashed green;
+      background-color: rgba(0, 255, 21, 0.5);
+      /* height:10%; */
+      display: none;
+      padding: 0%;
+      max-width: 100%;
+      position: absolute;
+      display: initial;
+      width: 100%;
+      height: 15%;
+      bottom: 0%;
+      border-radius:10px;
+      display: grid;
+      grid-template-areas: 
+   
+    "three three three";
+  }
+  
+  .sec1-div1-c img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius:10px;
+  }
+  
+  .sec1-div2-c:hover,
+  .sec1-div2-c:focus-visible{
+    /* display: initial; */
+    height:13vh;
+    box-shadow: inset 9px 0 98px -9px #000000ad, inset 0 0px 8px 0px #000000, -5px 0 0px -5px #000000;
+    background-color: rgba(0, 255, 21, 0.021);
+    grid-template-areas: 
+    "one one one"
+  
+    "three three three";
+  }
+  
+  .sec1-div2-c .fuck{
+    background-color: #0eac00;
+  }
+
+   /* ===javs==== */
+   .active{background-color: rgba(0, 255, 21, 0.5);}
+.active1{
+  background-color: rgba(0, 255, 21, 0.5);
+}
+}

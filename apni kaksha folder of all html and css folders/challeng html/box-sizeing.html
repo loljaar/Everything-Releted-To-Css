@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+         div{
+    width:200px;
+    height: 100px;
+    padding: 20px;
+    border: 10px solid red;
+    
+    background: yellow
+
+}
+  .contect-box{
+      box-sizing: content-box;
+      /* total width: 160px + (  2 * 20px )    +( 2 * 8px) = 216px  
+      total height: 80px + (  2 * 20px  )   +( 2 * 8px) = 136px  
+      contect box width: 160px
+      ontect box height : 80px 
+       */
+  }
+  .border-box {
+      box-sizing: border-box;
+      /* total width: 160px   
+      total height: 80px 
+      contect box width: 160px + (  2 * 20px )    - ( 2 * 8px) = 104px
+      cntect box height : 80px + (  2 * 20px  )   - ( 2 * 8px) = 24px
+       */
+               }
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="contect-box"> contact box</div>
+    <br>
+    <div class="border-box"> border box</div>
+    <!--<div class="border-box"> Border box</div> -->
+</body>
+</html>

@@ -1,0 +1,15 @@
+/* ===================
+   ---------section ar4 ---------
+   ======================= */
+
+   
+@media only screen and (max-width: 420px){
+    #ar4 section{
+      grid-template-areas: 
+  "one"
+  "two"
+  "thri";
+
+    }
+  
+   }

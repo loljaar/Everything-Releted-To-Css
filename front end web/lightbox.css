@@ -1,0 +1,73 @@
+*, *::before, *:after{
+    box-sizing: border-box;
+}
+body{
+    margin:0%;
+    font-weight: 300;
+}
+img{max-width: 100%;}
+.portfolio{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    padding: 1em;
+    background: #333;
+}
+.portfolio__item{
+    background: white;
+
+}
+.portfolio__dis{
+    padding: 1.5;
+}
+.portfolio__title{
+   font-size: 1.5em;
+   margin: 0%;
+}
+
+.protfolio-lightbox{
+    
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.protfolio-lightbox:target {
+    display: flex;
+}
+
+.protfolio-lightbox__contant{
+    width: 75%;
+    background: black;
+    padding: 1em;
+  position: relative;
+    
+}
+
+.close{
+    position: absolute;
+     width: 1em;
+     height: 1em;
+     background: red;
+     top: -1em;
+     right:-1em ;
+     border-radius: 50%;
+     text-decoration: none;
+     display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.close::after{
+    content: "X";
+    color: white;
+   font-weight: 700;
+ 
+}

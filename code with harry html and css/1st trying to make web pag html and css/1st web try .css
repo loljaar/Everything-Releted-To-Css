@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.body{
+    background-image: url(https://images4.alphacoders.com/597/597933.jpg);
+}
+
+
+.navbar{
+    
+    background-color: rgb(26, 214, 199);
+    
+}
+.navbar2{
+    background-color: rgb(26, 214, 199);
+    position: absolute;
+   
+}
+
+.navbar ul{
+    overflow: auto;
+    
+}
+.navbar2 ul{
+    overflow: auto;
+    
+}
+
+.navbar li{
+    text-transform: uppercase;
+    border: 2px ;
+    border-radius: 10px;
+   padding: 15px;
+    float: left;
+    list-style: none;
+    padding: 5px;
+    margin: 22px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    
+}
+.navbar2 li{
+    text-transform: uppercase;
+    border: 2px ;
+    border-radius: 10px;
+   padding: 15px;
+    float:left;
+
+    list-style: none;
+    padding: 5px;
+    margin: 22px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3vh;
+    text-align: center;
+    
+}
+.navbar li a{
+   
+    text-decoration: none;
+    color: white;
+    padding: 4vh;
+    border: 2px ;
+    border-radius: 10px;
+}
+.navbar2 li a{
+    
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 4vh;
+    border: 2px ;
+    border-radius: 10px;
+}
+.navbar li a:hover{
+    background-color: rgb(205, 241, 42) ;
+}
+.navbar2 li a:hover{
+    background-color: rgb(252, 5, 5) ;
+}
+#signin{
+    text-transform: uppercase;
+        float: right;
+        margin-top: 23px;
+        margin-right: 30px;
+        font-size: 3.5vh;
+        border: 2px solid  rgb(205, 241, 42);
+        border-radius: 4px;
+        color: rgb(111, 133, 14);
+        background-color: rgb(26, 214, 199);
+        padding: 5px 25px;
+}
+#signin :hover{
+    background-color: rgb(205, 241, 42);
+
+}
+#search{
+    text-transform: uppercase;
+        float: right;
+        margin-top: 23px;
+        margin-left: 13.9vh;
+        margin-right: 30px;
+        font-size: 2.5vh;
+        padding: 10px;
+        
+}
+#img{
+    width: 100%;
+}
+.container{
+      
+      text-align: center;
+      color: aliceblue;
+    }
+.text{
+    position: absolute;
+    color: white;
+}

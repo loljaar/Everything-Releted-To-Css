@@ -1,0 +1,90 @@
+*{box-sizing: border-box;}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    width: 100%;
+    background-color: gray;
+}
+#div1{
+    background-color: aquamarine;
+    border: 2px solid red;
+    margin-top: 30%;
+    position:absolute;
+    width:12vw;
+    min-height:30vh;
+    display: grid;
+    grid-template-areas:
+    "one"
+    "two";
+}
+#item-div-img{
+    border: 2px solid rgb(199, 179, 0);
+    position: relative;
+    height: 100%;
+    background-color: rgb(214, 209, 209);
+    grid-area: one;
+}
+#item-div-price{
+    border: 2px solid rgb(0, 255, 255);
+    position: relative;
+    background-color: brown;
+    height: 100%;
+    grid-area: two;
+}
+
+#item-div-list{
+    border: 2px solid blue;
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    width: 3vw;
+    height: 7vh;
+    background-color: chartreuse;
+    transform: scale(0);
+}
+
+
+#li-1{
+    color: burlywood;
+    list-style: none;
+    position: absolute;
+    left: 0%;
+    width: 3vw;
+    height: 10vh;
+    background-color: chocolate;
+    text-align: center;
+    transform: scale(0);
+}
+#li-1 #A{ text-decoration: none; color: white;}
+#li-2{
+    color: burlywood;
+    list-style: none;
+    position: absolute;
+    left: 0%;
+    width: 3vw;
+    height: 10vh;
+    top: 50%;
+    background-color: blueviolet;
+    text-align: center;
+    transform: scale(0);
+    
+} 
+#li-2 #B{ text-decoration: none; color: white;}
+
+
+
+#div1:hover > #item-div-list{
+    transform: scale(1);
+}
+
+
+#div3{ 
+     width: 10vw;
+     height: 40vh;
+     border: 2px solid black;
+     background-color: linear-gradient(red, blue) ;
+     box-shadow: inset   5px 0 5px -5px #CCC, 0 5px 5px -5px #CCC, -5px 0 5px -5px #CCC;
+}
